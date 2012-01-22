@@ -14,11 +14,6 @@ function draw_line(id, p1, p2, color){
 	document.getElementById('stage').appendChild(edge);
 }
 
-function random_id(){
-	var id = "point_"+(Math.floor(Math.random() * 10000000));
-	return id;
-}
-
 function makeSVG(tag, attrs) {
 	var el = document.createElementNS('http://www.w3.org/2000/svg', tag);
 	for (var k in attrs){

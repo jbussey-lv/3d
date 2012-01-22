@@ -2,8 +2,9 @@ function polyhedron(polygons){
 
 	this.polygons 	= polygons;
 	
-	this.points 		= new Array();
+	this.points 	= new Array();
 	
+	// create an array of points in this figure to use for transforms
 	var used_ids 	= new Array();
 	for(key in this.polygons){
 		var polygon = this.polygons[key];
@@ -20,7 +21,6 @@ function polyhedron(polygons){
 			this.points[key].translate(dx, dy, dz);
 		}
 	}
-	
-	// create an array of points in this figure to use for transforms
+
 
 }

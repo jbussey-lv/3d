@@ -1,8 +1,14 @@
 function point(x, y, z){
-
+	
+	var random_id = function(){
+		var id = "point_"+(Math.floor(Math.random() * 10000000));
+		return id;
+	}
+	
 	this.x = x;
 	this.y = y;
 	this.z = z;
+	this.flat = {x: 0, y: 0};
 	this.id = random_id();
 	
 	this.translate = function(dx, dy, dz){
